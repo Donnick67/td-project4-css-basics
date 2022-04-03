@@ -9,6 +9,7 @@
 html{
     width: 100%;
     font-size: 62.5%;
+    background-color: rgb(209, 197, 178);
 }
 
 html, body{
@@ -25,7 +26,7 @@ body{
 }
 
 .container1{
-    height: 100vh;
+    height: 70vh;
 }
 
 .home{
@@ -35,6 +36,11 @@ body{
     padding: 1rem 2rem;
     background-color: rgb(49, 153, 172);
     max-height: 5rem;
+    background-image: url(Assets/Images/4D-Wallpaper-05-1920-x-1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .home ul{
@@ -67,6 +73,7 @@ body{
 .logo a{
     text-decoration: none;
     color: white;
+    font-size: xx-large;
 }
 
 .next img{
@@ -79,4 +86,155 @@ body{
 
 .next{
     text-align: center;
+}
+
+.next h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(49, 153, 172);
+    
+}
+
+/* .next p img{
+    width: 70px;
+    height: 60px;
+    margin-top: 90px;
+} */
+
+.next p{
+    color: rgba(32, 24, 24, 0.651);
+    font-weight: 700;
+    font-size: 9px;
+    /* padding-left: 5rem;
+    padding-right: 6rem; */
+    text-align: center;
+    line-height: 18px;
+}
+
+.details{
+    /* background-color: rgb(49, 153, 172); */
+    background-image: url(Assets/Images/4D-Wallpaper-05-1920-x-1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 250, 250);
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    height: 40vh;
+    margin-top: 40px;
+}
+
+.vast,
+.query{
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.vast h4{
+    font-size: 2.2rem;
+}
+
+.vast p{
+    font-size: 1.2rem;
+    line-height: 17px;
+}
+
+.query h5{
+    font-size: medium;
+}
+
+.query h6{
+    font-size: small;
+    padding-top: 5px;
+    line-height: 39px;
+}
+
+.vast{
+    padding-left: 2rem;
+}
+
+.query{
+    padding-right: 6rem;
+    margin-right: 30px;
+}
+
+.serve{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.serve > div {
+    width: 300px;
+    height: 30vh;
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.ux{
+    background-image: url(Assets/Images/1b9353123351823.60eda68480d75.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 1px 7px 10px;
+    transition: box-shadow 0.6s linear;
+}
+
+.ux:hover{
+    box-shadow: 0 1px 7px 5px;
+    border-width: 10px;
+}
+
+.web{
+    background-image: url(Assets/Images/55d0ff16a7bbb62ff5d0d5a7e0cb644f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.inst{
+    background-image: url(Assets/Images/5ff54ddea30ce18d19be97c935d9ca03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 1px 7px 10px;
+}
+
+.prompt{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.link{
+    width: 10px;
+}
+
+.face{
+    width: 10px;
+
+}
+
+.twit{
+    width: 10px;
+}
+
+.insta{
+    width: 10px;
+}
+
+footer{
+    /* background-color: aquamarine; */
 }
