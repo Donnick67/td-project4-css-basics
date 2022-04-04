@@ -90,7 +90,7 @@ body{
 
 .next h1{
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(49, 153, 172);
     
 }
@@ -119,7 +119,7 @@ body{
     background-position: top;
     display: flex;
     justify-content: space-around;
-    color: rgb(255, 250, 250);
+    color: white;
     margin-bottom: 50px;
     padding-bottom: 30px;
     height: 40vh;
@@ -162,31 +162,53 @@ body{
 
 .serve{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    height: 60vh;
 }
 
 .serve > div {
     width: 300px;
     height: 30vh;
     text-align: center;
-    font-size: 10px;
+    /* font-size: 10px; */
     line-height: 17px;
     margin-bottom: 60px;
     margin-top: 40px;
 }
 
+.services h4{
+    color: whitesmoke;
+    font-size: 3.2rem;
+    padding-left: 110px;
+    padding-top: 65px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(49, 153, 172);
+}
+
 .ux{
-    background-image: url(Assets/Images/1b9353123351823.60eda68480d75.jpg);
-    background-position: center;
+    background-image: url(Assets/Images/thumb-350-1182053.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 0 1px 7px 10px;
-    transition: box-shadow 0.6s linear;
+    box-shadow: 0 3px 3px 5px;
+    transition: box-shadow 0.8s linear;
+    color: rgb(167, 191, 197);
+    font-size: 1.8rem;
+}
+
+.ux h5{
+    font-weight: 25rem;
+    font-size: 2rem;
+}
+
+.ux p{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .ux:hover{
-    box-shadow: 0 1px 7px 5px;
+    box-shadow: 0 1px 5px 4px;
     border-width: 10px;
 }
 
@@ -196,7 +218,26 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
+    box-shadow: 0 3px 5px 8px;
+    transition: box-shadow 0.8s linear;
+    font-size: 1.8rem;
+    color:rgb(167, 191, 197);
 }
+
+.web h5{
+    font-weight: 25rem;
+    font-size: 2rem;
+}
+
+.web p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.web:hover{
+    box-shadow: 0 1px 7px 5px;
+    border-width: 10px;
+}    
 
 .inst{
     background-image: url(Assets/Images/5ff54ddea30ce18d19be97c935d9ca03.jpg);
@@ -204,37 +245,130 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 0 1px 7px 10px;
+    box-shadow: 0 3px 5px 8px;
+    transition: box-shadow 0.8s linear;
+    font-size: 1.8rem;
+    color: rgb(167, 191, 197);
 }
+
+.inst h5{
+    font-weight: 25rem;
+    font-size: 2rem;
+}
+
+.inst p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inst:hover{
+    box-shadow: 0 1px 7px 5px;
+    border-width: 10px;
+}    
 
 .prompt{
     text-align: center;
     background-color: aquamarine;
+    background-image: url(Assets/Images/4D-Wallpaper-05-1920-x-1080.jpg);
+    background-position: bottom;
+    height: 30vh;
+    padding-top: 20px;
 }
 
 .flex-container{
     display: flex;
     justify-content: center;
-    
 }
 
 .link{
-    width: 10px;
+    width: 15px;
+    background-color: rgba(81, 212, 230, 0.692);
+    border-radius: 3px;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 7px 10px;
+    margin-right: 10px;
 }
 
 .face{
-    width: 10px;
-
+    width: 20px;
+    background-color: rgba(81, 212, 230, 0.692);
+    border-radius: 3px;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 7px 10px;
+    margin-right: 10px;
 }
 
 .twit{
-    width: 10px;
+    width: 20px;
+    background-color: rgba(81, 212, 230, 0.692);
+    font-size: 1.3rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 7px 10px;
+    margin-right: 10px;
 }
 
 .insta{
-    width: 10px;
+    width: 15px;
+    background-color: rgba(81, 212, 230, 0.692);
+    font-size: 1.3rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 7px 10px;
+    margin-right: 10px;
+}
+
+.me{
+    color: whitesmoke;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.me p:nth-child(1){
+    font-size: 1.5rem;
 }
 
 footer{
-    /* background-color: aquamarine; */
+    color: antiquewhite;
+    padding-top: 10px;
+}
+
+@media screen and (min-width:768px){
+    .home ul{
+        width: 40rem;
+        padding: 1rem 1rem;
+    }
+
+    .next h1{
+        line-height: 40px;
+        font-size: 3rem;
+    }
+
+    .details{
+        padding: .5rem 5rem;
+        height: 30vh;
+    }
+
+    .container1{
+        height: 45vh;
+    }
+
+    .services{
+        width: 75rem;
+        height: 60rem;
+        padding: 1rem 1rem;
+    }
+
+    .prompt{
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .home ul{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:280px){
+    
 }
