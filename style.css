@@ -332,43 +332,13 @@ footer{
     padding-top: 10px;
 }
 
-@media screen and (min-width:768px){
-    .home ul{
-        width: 40rem;
-        padding: 1rem 1rem;
-    }
-
-    .next h1{
-        line-height: 40px;
-        font-size: 3rem;
-    }
-
-    .details{
-        padding: .5rem 5rem;
-        height: 30vh;
-    }
-
-    .container1{
-        height: 45vh;
-    }
-
-    .services{
-        width: 75rem;
-        height: 60rem;
-        padding: 1rem 1rem;
-    }
-
+@media screen and (max-width: 700px){
+    .container1,
+    .details,
+    .services,
     .prompt{
-        height: 20rem;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 15px;
     }
-}
-
-@media screen and (min-width:1200px){
-    .home ul{
-        width: 20%;
-    }
-}
-
-@media screen and (min-width:280px){
-    
 }
