@@ -9,7 +9,8 @@
 html{
     width: 100%;
     font-size: 62.5%;
-    background-color: rgb(209, 197, 178);
+    background-image: url(Assets/Images/images.jpg);
+    background-size: cover;
 }
 
 html, body{
@@ -40,8 +41,34 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    overflow: hidden;
+    position: relative;
 }
+
+.home #Drops{
+    display: none;
+}
+
+.home a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .home a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .home a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
 .home ul{
     display: flex;
@@ -91,28 +118,28 @@ body{
 .next h1{
     font-weight: 700;
     font-size: 3rem;
-    color: rgb(49, 153, 172);
+    color: rgb(23, 93, 105);
+    animation:blinking 1.8s infinite;
+}
+
+@keyframes blinking{
+0%{   color: rgb(245, 10, 10);   }
+47%{   color: rgb(94, 89, 31); }
+62%{   color: rgb(60, 80, 32); }
+97%{   color:transparent; }
+100%{  color: #000;   }
     
 }
 
-/* .next p img{
-    width: 70px;
-    height: 60px;
-    margin-top: 90px;
-} */
-
 .next p{
-    color: rgba(32, 24, 24, 0.651);
-    font-weight: 700;
+    color: rgba(14, 8, 8, 0.815);
+    font-weight: bolder;
     font-size: 9px;
-    /* padding-left: 5rem;
-    padding-right: 6rem; */
     text-align: center;
     line-height: 18px;
 }
 
 .details{
-    /* background-color: rgb(49, 153, 172); */
     background-image: url(Assets/Images/4D-Wallpaper-05-1920-x-1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +197,6 @@ body{
     width: 300px;
     height: 30vh;
     text-align: center;
-    /* font-size: 10px; */
     line-height: 17px;
     margin-bottom: 60px;
     margin-top: 40px;
@@ -182,7 +208,7 @@ body{
     padding-left: 110px;
     padding-top: 65px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(49, 153, 172);
+    color: rgb(23, 93, 105);
 }
 
 .ux{
@@ -191,14 +217,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 0 3px 3px 5px;
+    box-shadow: 0 4px 7px 8px;
     transition: box-shadow 0.8s linear;
     color: rgb(167, 191, 197);
     font-size: 1.8rem;
+    opacity: 0.8;
 }
 
 .ux h5{
-    font-weight: 25rem;
     font-size: 2rem;
 }
 
@@ -210,6 +236,7 @@ body{
 .ux:hover{
     box-shadow: 0 1px 5px 4px;
     border-width: 10px;
+    opacity: 1.0;
 }
 
 .web{
@@ -218,14 +245,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 0 3px 5px 8px;
+    box-shadow: 0 4px 7px 8px;
     transition: box-shadow 0.8s linear;
     font-size: 1.8rem;
     color:rgb(167, 191, 197);
+    opacity: 0.8;
 }
 
 .web h5{
-    font-weight: 25rem;
     font-size: 2rem;
 }
 
@@ -237,6 +264,7 @@ body{
 .web:hover{
     box-shadow: 0 1px 7px 5px;
     border-width: 10px;
+    opacity: 1.0;
 }    
 
 .inst{
@@ -245,14 +273,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 0 3px 5px 8px;
+    box-shadow: 0 4px 7px 8px;
     transition: box-shadow 0.8s linear;
     font-size: 1.8rem;
     color: rgb(167, 191, 197);
+    opacity: 0.8;
 }
 
 .inst h5{
-    font-weight: 25rem;
     font-size: 2rem;
 }
 
@@ -264,6 +292,7 @@ body{
 .inst:hover{
     box-shadow: 0 1px 7px 5px;
     border-width: 10px;
+    opacity: 1.0;
 }    
 
 .prompt{
@@ -332,13 +361,32 @@ footer{
     padding-top: 10px;
 }
 
-@media screen and (max-width: 700px){
-    .container1,
+@media screen and (min-width: 768px) {
     .details,
+    .services{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .serve,
+    .merge{
+        width: 100%;
+    }
+
+    .query h6{
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container1,
     .services,
     .prompt{
         width: 100%;
-        margin-left: 0px;
-        margin-right: 15px;
+    }
+
+    .merge{
+        display: contents;
+        justify-content: space-around;
     }
 }
