@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: Times-New-Roman;
+    src: url(assets/fonts/Times-New-Roman/times\ new\ roman\ bold\ italic.ttf);
+}
+
 .contact-wrapper{
     display: flex;
     flex-direction: column;
@@ -67,6 +73,7 @@ button{
     font-weight: 700;
     font-size: 1.5rem;
     cursor: pointer;
+    font-family: Times-New-Roman;
 }
 
 button:hover{
@@ -94,4 +101,28 @@ section p{
     font-size: 1.4rem;
     color: rgb(0, 0, 0);
     font-weight: bolder;
+    font-family: Times-New-Roman;
 }
+
+@media screen and (min-width: 768px) {
+    .contact-wrapper{
+       width: 100%;
+       height: 100vh;
+       margin-top: 5px;
+    }
+
+    .form-wrapper{
+        height: 60vh;
+    }
+}    
+
+@media screen and (max-width: 540px) {
+    .contact-wrapper{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .form-wrapper{
+        width: 80%;
+    }
+}    

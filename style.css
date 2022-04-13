@@ -147,7 +147,7 @@ body{
     background-position: top;
     display: flex;
     justify-content: space-around;
-    color: white;
+    color: rgb(228, 222, 147);
     margin-bottom: 50px;
     padding-bottom: 30px;
     height: 40vh;
@@ -370,24 +370,42 @@ footer{
         flex-wrap: wrap;
     }
     .serve,
-    .merge{
+    .merge,
+    .home{
         width: 100%;
     }
 
-    .query h6{
+    #Drops{
+        padding-left: 2rem;
+        margin-left: 5rem;
+    }
+
+    .logo{
+        padding-right: 4rem;
+        margin-right: 1.6rem;
+    }
+
+    .query{
         padding-top: 1rem;
+        margin-left: 6rem;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 540px) {
     .container1,
+    .details,
     .services,
     .prompt{
         width: 100%;
     }
 
     .merge{
-        display: contents;
-        justify-content: space-around;
+        inline-size: 90%;
+        padding-right: 4rem;
+        overflow-y: scroll;
+    }
+
+    .query{
+        padding-left: 9rem;
     }
 }
