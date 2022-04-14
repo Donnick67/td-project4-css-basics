@@ -392,7 +392,14 @@ footer{
 }
 
 @media screen and (max-width: 540px) {
-    .container1,
+    .container1{
+        width: 100%;
+    }
+
+    .nav-item{
+        width: 40%;
+    }
+
     .details,
     .services,
     .prompt{
@@ -407,5 +414,66 @@ footer{
 
     .query{
         padding-left: 9rem;
+    }
+
+    .logo{
+        padding-left: 0rem;
+        margin-left: 0rem;
+    }
+
+    #Drops{
+        margin-right: 3rem;
+    }
+
+    .services h4{
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+
+    .serve{
+        height: 50vh;
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .ux{
+        font-size: 1.5rem;
+        overflow-y: scroll;
+    }
+
+    .web{
+        font-size: 1.5rem;
+        overflow-y: scroll;
+    }
+
+    .inst{
+        font-size: 1.5rem;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #Drops{
+        margin-left: 26rem;
+    }
+
+    .details{
+        height: 50vh;
+    }
+
+    .merge{
+        display: flex;
+        justify-content: space-around;
+        color: rgb(255, 72, 0);
+        font-size: medium;
+    }
+
+    .query{
+        margin-left: 10rem;
+        padding-right: 1rem;
+    }
+
+    .next{
+        height: 50vh;
     }
 }
